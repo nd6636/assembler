@@ -20,14 +20,10 @@ The assembler handles multiple files provided as arguments without the extension
 and generates appropriate output or error messages for each file.
 
  
-1.  In order to run your own testers on our program you will need to make sure you save those testers in the main/parent
-    directory and NOT in the Testers/ directory (this folder holds only the testers we used including output files and
-    terminal screenshots).
+To run the project, execute the following commands in the terminal while the current directory is the project's root:
+make
+./build/bin/assembler dir_error_tester inst_error_tester macr_error_tester invalid_input1 invalid_input2 valid_input1 valid_input2 valid_input3 valid_input4
 
-2.  The executable is in build/bin/ directory.
-
-3.  You can use 'make clean' command in terminal to remove build/ directory along with tester output files.
-
-4.  You can use 'make valgrind' after updating ARGS in Makefile file.
-
-5.  Current compiling command include '-g' flag in it. 
+After running the program, you can clean up generated files by executing:
+make clean
+This will remove any temporary files created during execution.
