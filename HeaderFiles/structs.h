@@ -24,7 +24,7 @@ typedef struct
  * 
  */
 typedef struct {
-    char error_message[200];
+    char error_message[400];
     int am_line_number;
     int is_error;
     int is_label_declaration;
